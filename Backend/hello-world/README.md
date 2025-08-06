@@ -1,6 +1,6 @@
 # Hello World Spring Boot Application
 
-This is a simple Spring Boot application that exposes a REST API to return a "Hello, World!" message.
+This is a simple Spring Boot application that exposes a REST API to return a "Hello World from API" message.
 
 ## Features
 
