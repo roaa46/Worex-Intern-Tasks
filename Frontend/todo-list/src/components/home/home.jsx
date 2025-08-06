@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Task from "../task/task";
 import "./home.css";
 
 function Home() {
-  const [tasks, setTasks] = useState([]);
+  
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem('tasks_list')) || []);
   const [newTaskTitle, setNewTitleOfTask] = useState("");
-
+  
+  useEffect(() => {
+    localStorage.setItem('tasks_list', JSON.stringify(tasks))
+  }, [tasks])
+  
   const onAdd = () => {
     if(!newTaskTitle.trim()) {
       alert("Task title is required");
@@ -18,9 +23,11 @@ function Home() {
     setTasks([...tasks, newTask]);
     setNewTitleOfTask("");
   };
+
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id != id));
   };
+
   return (
     <div className="home-container">
       <h1 className="home-title">Track your tasks</h1>
