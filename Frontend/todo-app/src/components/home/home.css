@@ -1,0 +1,92 @@
+.home-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.567);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-title {
+  color: #113F67;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: #113F67;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.add-button {
+  padding: 15px 25px;
+  background-color: #113F67;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.add-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.add-button:active {
+  transform: translateY(0);
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.empty-list {
+  text-align: center;
+  color: #113F67;
+  font-style: italic;
+  padding: 2rem;
+  border: 2px dashed #113f6759;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .input-container {
+    flex-direction: column;
+  }
+  
+  .add-button {
+    width: 100%;
+  }
+}
