@@ -1,0 +1,6 @@
+[submodule "frontend/task-1"]
+	path = frontend/task-1
+	url = https://github.com/roaa46/todo-task.git
+[submodule "backend/task-1"]
+	path = backend/task-1
+	url = https://github.com/roaa46/hello-world-API.git
