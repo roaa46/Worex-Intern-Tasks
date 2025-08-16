@@ -7,3 +7,6 @@
 [submodule "frontend/task-2"]
 	path = frontend/task-2
 	url = https://github.com/roaa46/crud-ui.git
+[submodule "frontend/task-2.git"]
+	path = frontend/task-2.git
+	url = https://github.com/roaa46/crud-ui
