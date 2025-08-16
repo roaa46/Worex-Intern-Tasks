@@ -4,3 +4,6 @@
 [submodule "backend/task-1"]
 	path = Backend/task-1
 	url = https://github.com/roaa46/hello-world-API.git
+[submodule "frontend/task-2"]
+	path = frontend/task-2
+	url = https://github.com/roaa46/crud-ui
